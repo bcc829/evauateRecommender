@@ -31,6 +31,7 @@ public static ArrayList<String> returnPreferProperty (int User_Id){
 			while(rs.next()){
 				PropertyList.add(rs.getString("Property_Id"));
 			}
+			rs.close();
 			stmt.close();
 			conn.close();
 		} catch (SQLException e) {
