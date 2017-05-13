@@ -25,7 +25,7 @@ public static ArrayList<String> returnPreferProperty (int User_Id){
 			conn = DriverManager.getConnection(jdbcUrl, userId, userPass);
 			stmt = conn.createStatement();
 			
-			String sql = "select Property_Id from user_prefer_property where User_Id =  + User_Id";
+			String sql = "select Property_Id from user_prefer_property where User_Id ="  + User_Id + ";";
 			
 			ResultSet rs= stmt.executeQuery(sql);
 			while(rs.next()){
