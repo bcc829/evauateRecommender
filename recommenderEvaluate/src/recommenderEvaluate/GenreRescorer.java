@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 import org.apache.mahout.cf.taste.recommender.IDRescorer;
 
+
+
 public class GenreRescorer implements IDRescorer {
 	int UserId;
 	ArrayList<String> userAttribute = new ArrayList<String>();
@@ -41,5 +43,6 @@ public class GenreRescorer implements IDRescorer {
 		}
 		return originalScore;
 	}
+
 
 }
